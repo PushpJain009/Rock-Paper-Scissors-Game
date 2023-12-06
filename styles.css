@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(90deg, rgb(21, 23, 152) 0%, rgba(180, 24, 24, 0.967) 100%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+#rock {
+    color: rgb(177, 111, 44);
+}
+
+#paper {
+    color: rgb(229, 229, 229);
+}
+
+#scissor {
+    color: rgb(151, 150, 150);
+}
+
+
+#resultMessage {
+    color: rgb(210, 202, 47);
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.container {
+    max-height: 100vh;
+}
+
+.container h1 {
+    font-size: 70px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: -5% 0 10% 0;
+}
+
+.row {
+    margin-bottom: 10%;
+}
+
+.choices button {
+    margin: 10px 20px;
+    padding: 5px 40px;
+    font-size: 20px;
+}
+
+.choices button:hover {
+    background: linear-gradient(50deg, rgba(0, 183, 255, 0.967) 0%, rgb(10, 7, 113) 100%);
+    transition: 5ms;
+}
+
+#playerScore,
+#computerScore {
+    font-size: 25px;
+}
+
+.rockImg,
+.paperImg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.scissorImg {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}

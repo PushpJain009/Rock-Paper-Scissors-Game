@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1>
+        <img src="./assets/rock-paper-scissors.png" alt="logo" width="100" />
+        <span id="rock">Rock</span> <span id="paper">Paper</span>
+        <span id="scissor">Scissors</span>
+        <img src="./assets/rock-paper-scissors.png" alt="logo" width="100" />
+      </h1>
+      <div class="row">
+        <div class="col-sm">
+          <div class="score">
+            <div class="player-score">
+              <h3>Player</h3>
+              <p id="playerScore">0</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="result-message">
+            <h2 id="resultMessage"></h2>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="score">
+            <div class="computer-score">
+              <h3>Computer</h3>
+              <p id="computerScore">0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="choices">
+        <button class="btn btn-primary" onclick="userChoice('rock')">
+          <img src="./assets/fist.png" alt="Rock" class="rockImg" />
+          Rock
+        </button>
+        <button class="btn btn-primary" onclick="userChoice('paper')">
+          <img src="./assets/paper.png" alt="Paper" class="paperImg" />
+          Paper
+        </button>
+        <button class="btn btn-primary" onclick="userChoice('scissors')">
+          <img src="./assets/scissors.png" alt="Scissor" class="scissorImg" />
+          Scissors
+        </button>
+      </div>
+      <div class="result mt-4">
+        <h2 id="resultText">Result :</h2>
+      </div>
+      <button class="btn btn-danger mt-4" onclick="resetGame()">
+        Reset Game
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
